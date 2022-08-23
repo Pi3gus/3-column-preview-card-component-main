@@ -6,8 +6,24 @@
     --Transparent-white: hsla(0, 0%, 100%, 0.75);
     --Very-light-gray: hsl(0, 0%, 95%);
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Big Shoulders Display', cursive;
     font-family: 'Lexend Deca', sans-serif;
-
+    font-size: 15px;
+    max-width: 1440px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    height: 100vh;
+}
+.container{
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
