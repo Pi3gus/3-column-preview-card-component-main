@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
-::root{
+:root{
     --Bright-orange: hsl(31, 77%, 52%);
     --Dark-cyan: hsl(184, 100%, 22%);
     --Very-dark-cyan: hsl(179, 100%, 13%);
     --Transparent-white: hsla(0, 0%, 100%, 0.75);
     --Very-light-gray: hsl(0, 0%, 95%);
+    --Big-Shoulders-Display: 'Big Shoulders Display', cursive;
+    --Lexend-Deca: 'Lexend Deca', sans-serif;
 }
 *{
     margin: 0;
@@ -12,18 +14,31 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Big Shoulders Display', cursive;
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--Lexend-Deca);
     font-size: 15px;
     max-width: 1440px;
     display: grid;
     place-items: center;
     margin: 0 auto;
     height: 100vh;
+    background-color: rgb(83, 78, 78);
 }
 .container{
+    width: 70%;
 }
 .card{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr)
+}
+.column_sedan{
+    background-color: var(--Bright-orange);
+}
+.column-suv{
+    background-color: var(--Dark-cyan);
+}
+.column-lux{
+    background-color: var(--Very-dark-cyan);
+}
+.content{
+    
 }
